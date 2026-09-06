@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Sarapan Kita — Sarapan simple, tidak ribet.</title>
+<meta name="description" content="Roti John, Roti Baghdad, dan aneka gorengan. Delivery order sarapan tanpa ribet.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brandmark">
+      <span class="logo-badge" id="logoBadge">SK</span>
+      <div class="brand-text">
+        <span class="brand-name" id="brandName">Sarapan Kita</span>
+        <span class="brand-tagline" id="brandTagline">Sarapan simple, tidak ribet.</span>
+      </div>
+    </div>
+    <button class="cart-btn" id="openCartBtn" aria-label="Buka keranjang">
+      🧺<span class="cart-count" id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-shape"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Delivery order sarapan</p>
+    <h1 class="hero-title">Lapar pagi-pagi?<br>Tinggal pesan, kami antar.</h1>
+    <p class="hero-sub" id="heroTagline">Sarapan simple, tidak ribet.</p>
+    <div class="hero-icons">
+      <span>🥖 Roti John</span>
+      <span>🫓 Roti Baghdad</span>
+      <span>🍌 Gorengan</span>
+    </div>
+    <a href="#menu" class="btn btn-primary hero-cta">Lihat Menu</a>
+  </div>
+</section>
+
+<!-- ============ ONGKIR BANNER ============ -->
+<section class="ongkir-banner" id="ongkirBanner">
+  <span class="ongkir-icon">🛵</span>
+  <p id="ongkirText">Gratis ongkir untuk area tertentu, syarat & ketentuan berlaku.</p>
+</section>
+
+<!-- ============ PROMO ============ -->
+<section class="section promo-section">
+  <h2 class="section-title">Promo &amp; Voucher</h2>
+  <div class="promo-scroll" id="promoScroll"></div>
+</section>
+
+<!-- ============ MENU ============ -->
+<section class="section menu-section" id="menu">
+  <h2 class="section-title">Menu Kami</h2>
+  <div class="category-tabs" id="categoryTabs">
+    <button class="tab active" data-cat="semua">Semua</button>
+    <button class="tab" data-cat="roti-john">Roti John</button>
+    <button class="tab" data-cat="roti-baghdad">Roti Baghdad</button>
+    <button class="tab" data-cat="gorengan">Gorengan</button>
+  </div>
+  <div class="menu-list" id="menuList"></div>
+</section>
+
+<!-- ============ LOKASI ============ -->
+<section class="section lokasi-section">
+  <h2 class="section-title">Lokasi Outlet</h2>
+  <div class="lokasi-card">
+    <p class="lokasi-nama" id="outletName">Sarapan Kita</p>
+    <p class="lokasi-alamat" id="outletAddress">-</p>
+    <p class="lokasi-jam" id="outletJam"></p>
+    <div class="map-frame">
+      <iframe id="mapsFrame" src="" width="100%" height="220" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <a href="#" id="mapsLinkBtn" target="_blank" class="btn btn-outline">Buka di Google Maps</a>
+  </div>
+</section>
+
+<!-- ============ HALAL & FOOTER ============ -->
+<footer class="footer">
+  <div class="halal-block" id="halalBlock">
+    <div class="halal-logo" id="halalLogo">HALAL</div>
+    <div>
+      <p class="halal-title">Produk Halal</p>
+      <p class="halal-number" id="halalNumber"></p>
+    </div>
+  </div>
+  <div class="footer-contact">
+    <p id="footerBrand">Sarapan Kita</p>
+    <p>WhatsApp: <span id="footerPhone">-</span></p>
+    <p>Instagram: <span id="footerIG">-</span></p>
+  </div>
+  <p class="footer-copy">© 2026 Sarapan Kita. Semua hak dilindungi.</p>
+</footer>
+
+<!-- ============ STICKY BOTTOM CART BAR ============ -->
+<div class="sticky-cart" id="stickyCart" hidden>
+  <div class="sticky-cart-info">
+    <span id="stickyCount">0 item</span>
+    <strong id="stickyTotal">Rp 0</strong>
+  </div>
+  <button class="btn btn-primary" id="stickyCartBtn">Lihat Keranjang</button>
+</div>
+
+<!-- ============ MODAL: DETAIL MENU ============ -->
+<div class="overlay" id="itemModalOverlay">
+  <div class="sheet" id="itemModal">
+    <button class="sheet-close" data-close>✕</button>
+    <div id="itemModalBody"></div>
+  </div>
+</div>
+
+<!-- ============ MODAL: KERANJANG / CHECKOUT ============ -->
+<div class="overlay" id="cartModalOverlay">
+  <div class="sheet" id="cartModal">
+    <button class="sheet-close" data-close>✕</button>
+    <h3 class="sheet-title">Keranjang Kamu</h3>
+    <div id="cartItemsList"></div>
+
+    <div class="cart-area">
+      <label for="areaInput">Wilayah pengantaran</label>
+      <input type="text" id="areaInput" placeholder="Contoh: Cikarang Utara">
+      <p class="ongkir-status" id="ongkirStatus"></p>
+    </div>
+
+    <div class="cart-payment">
+      <label>Metode Pembayaran</label>
+      <div class="payment-options" id="paymentOptions"></div>
+      <div id="qrisBox" class="qris-box" hidden>
+        <img id="qrisImg" src="" alt="QRIS Sarapan Kita">
+        <p id="paymentNote" class="payment-note"></p>
+      </div>
+    </div>
+
+    <div class="cart-note">
+      <label for="orderNote">Catatan tambahan untuk pesanan</label>
+      <textarea id="orderNote" rows="2" placeholder="Contoh: tolong kantong dipisah, alamat lengkap, dll"></textarea>
+    </div>
+
+    <div class="cart-summary">
+      <div class="row"><span>Subtotal</span><span id="sumSubtotal">Rp 0</span></div>
+      <div class="row"><span>Ongkir</span><span id="sumOngkir">Rp 0</span></div>
+      <div class="row total"><span>Total</span><span id="sumTotal">Rp 0</span></div>
+    </div>
+
+    <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout via WhatsApp</button>
+  </div>
+</div>
+
+<!-- ============ MODAL: INVOICE ============ -->
+<div class="overlay" id="invoiceModalOverlay">
+  <div class="sheet" id="invoiceModal">
+    <button class="sheet-close" data-close>✕</button>
+    <div id="invoiceBody" class="invoice-body"></div>
+    <div class="invoice-actions">
+      <button class="btn btn-outline" id="printInvoiceBtn">Cetak / Simpan PDF</button>
+      <button class="btn btn-primary" id="closeInvoiceBtn">Selesai</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
