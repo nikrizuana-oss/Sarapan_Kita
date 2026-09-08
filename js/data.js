@@ -40,7 +40,7 @@ const CONFIG = {
     name: "Sarapan Kita - Outlet Pusat",
     address: "Jl. antara raya, harapan jaya, bekasi utara",
     // Cara ambil link embed Google Maps ada di README.md bagian "Ganti Lokasi Google Maps"
-    mapsEmbedUrl: "https://www.google.com/maps?q=Cikarang%20Utara%2C%20Bekasi&output=embed",
+    mapsEmbedUrl: "https://maps.app.goo.gl/vBF8PaWH6Jfx1NWm6",
     // Link ini dipakai tombol "Buka di Google Maps"
     mapsLinkUrl: "https://maps.app.goo.gl/",
     jamBuka: "16.00 - 22.00 WIB (Setiap Hari)"
@@ -59,10 +59,7 @@ const CONFIG = {
     aktif: true,
     minBelanja: 30000, // gratis ongkir jika total belanja >= angka ini
     area: [
-      "Cikarang Utara",
-      "Cikarang Selatan",
-      "Cikarang Barat",
-      "Lippo Cikarang"
+      "harapan jaya bekasi utara"
     ],
     catatan: "Gratis ongkir berlaku untuk area di atas dengan minimal belanja Rp 30.000. Di luar area, ongkir menyesuaikan jarak (dikonfirmasi via WhatsApp).",
     // Perkiraan ongkir kalau area TIDAK termasuk di daftar "area" di atas (hanya estimasi awal)
@@ -169,7 +166,7 @@ const CONFIG = {
       id: "max-john",
       kategori: "roti-john",
       nama: "Max John",
-      deskripsi: "Telur, sayur, dan daging ayam, saus khas King John, mayonaise, dan saus sambal.",
+      deskripsi: "Telur, sayur, dan daging ayam kari, saus khas King John, mayonaise, dan saus sambal.",
       image: "",
       emoji: "🥖",
       punyaUkuran: true,
@@ -207,12 +204,12 @@ const CONFIG = {
     {
       id: "rb-original",
       kategori: "roti-baghdad",
-      nama: "Roti Baghdad Original",
-      deskripsi: "Roti khas Timur Tengah dengan isian telur dan daging pilihan, dipadukan saus creamy ala Sarapan Kita.",
+      nama: "Roti Baghdad Kari Ayaam",
+      deskripsi: "Roti isian daging ayam kari dengan bumbu kari impor malaysia dibungkus kulit lumpia lalu digoreng.",
       image: "",
       emoji: "🫓",
       punyaUkuran: true,
-      hargaUkuran: { M: 22000, L: 27000, XL: 34000 },
+      hargaUkuran: { M: 12000, L: 12000, XL: 12000 },
       pilihDaging: true,
       addOnTersedia: ["keju", "xtratelur", "sausking", "mayo"]
     },
