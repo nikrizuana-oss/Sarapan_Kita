@@ -21,7 +21,7 @@ const CONFIG = {
     tagline: "Sarapan simple, tidak ribet.",
     // Logo: kosongkan "" untuk pakai logo teks bawaan (bisa diedit lewat CSS),
     // atau isi path gambar, contoh: "assets/logo.png"
-    logoImage: "logokingjohn.png",
+    logoImage: "assets/logokingjohn.png",
     // Warna aksen kalau logoImage kosong (logo teks otomatis)
     logoInitial: "SK"
   },
@@ -51,7 +51,7 @@ const CONFIG = {
     aktif: true,
     nomorSertifikat: "ID00000000000000", // ganti dengan nomor sertifikat halal asli
     // Ganti dengan file logo halal resmi MUI/BPJPH kamu di /assets, contoh: "assets/logo-halal.png"
-    logoImage: "halal.png"
+    logoImage: "assets/halal.png"
   },
 
   /* ============ 5. ONGKIR GRATIS (BERSYARAT) ============ */
@@ -73,7 +73,7 @@ const CONFIG = {
   pembayaran: {
     qrisAktif: true,
     // Taruh gambar QRIS asli kamu di /assets lalu isi path-nya di sini
-    qrisImage: "assets/qris-placeholder.png",
+    qrisImage: "assets/qris.png",
     cashAktif: true,
     catatan: "Untuk QRIS, lakukan pembayaran lalu kirim bukti transfer melalui chat WhatsApp saat checkout."
   },
