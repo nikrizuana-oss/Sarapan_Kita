@@ -21,7 +21,7 @@ const CONFIG = {
     tagline: "Sarapan simple, tidak ribet.",
     // Logo: kosongkan "" untuk pakai logo teks bawaan (bisa diedit lewat CSS),
     // atau isi path gambar, contoh: "assets/logo.png"
-    logoImage: "",
+    logoImage: "logokingjohn.png",
     // Warna aksen kalau logoImage kosong (logo teks otomatis)
     logoInitial: "SK"
   },
@@ -29,21 +29,21 @@ const CONFIG = {
   /* ============ 2. KONTAK & CHECKOUT ============ */
   contact: {
     // Nomor WhatsApp tujuan checkout, format 62xxxxxxxxxx (TANPA + atau 0 di depan)
-    whatsapp: "6281234567890",
+    whatsapp: "6285157188619",
     // Nomor ini yang tampil di layar (boleh format biasa)
-    phoneDisplay: "0812-3456-7890",
+    phoneDisplay: "6285157188619",
     instagram: "@sarapankita.id"
   },
 
   /* ============ 3. ALAMAT OUTLET + GOOGLE MAPS ============ */
   outlet: {
     name: "Sarapan Kita - Outlet Pusat",
-    address: "Jl. Contoh Raya No. 10, Cikarang Utara, Bekasi, Jawa Barat",
+    address: "Jl. antara raya, harapan jaya, bekasi utara",
     // Cara ambil link embed Google Maps ada di README.md bagian "Ganti Lokasi Google Maps"
     mapsEmbedUrl: "https://www.google.com/maps?q=Cikarang%20Utara%2C%20Bekasi&output=embed",
     // Link ini dipakai tombol "Buka di Google Maps"
     mapsLinkUrl: "https://maps.app.goo.gl/",
-    jamBuka: "05.00 - 11.00 WIB (Setiap Hari)"
+    jamBuka: "16.00 - 22.00 WIB (Setiap Hari)"
   },
 
   /* ============ 4. HALAL ============ */
@@ -51,7 +51,7 @@ const CONFIG = {
     aktif: true,
     nomorSertifikat: "ID00000000000000", // ganti dengan nomor sertifikat halal asli
     // Ganti dengan file logo halal resmi MUI/BPJPH kamu di /assets, contoh: "assets/logo-halal.png"
-    logoImage: ""
+    logoImage: "halal.png"
   },
 
   /* ============ 5. ONGKIR GRATIS (BERSYARAT) ============ */
