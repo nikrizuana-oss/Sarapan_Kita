@@ -208,9 +208,9 @@ const CONFIG = {
       image: "",
       emoji: "🫓",
       punyaUkuran: true,
-      hargaUkuran: { "satu ukuran" },
+      hargaUkuran: { "12000" },
       pilihDaging: true,
-      addOnTersedia: ["keju", "xtratelur", "sausking", "mayo"]
+      addOnTersedia: []
     },
     {
       id: "gorengan-pisang-molen",
