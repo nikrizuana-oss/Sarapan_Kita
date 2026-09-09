@@ -208,7 +208,7 @@ const CONFIG = {
       image: "",
       emoji: "🫓",
       punyaUkuran: false,
-      hargaUkuran: { "12000" },
+      hargaUkuran: 12000,
       pilihDaging: true,
       addOnTersedia: []
     },
