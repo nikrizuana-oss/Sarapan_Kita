@@ -200,8 +200,7 @@ const CONFIG = {
       isianTersedia: ["telur", "sayur", "sapi"],
       addOnTersedia: ["keju", "xtratelur", "sausking", "mayo"]
     },
-    {
-      {
+     {
   id: "roti-baghdad",
   kategori: "roti-baghdad",
   nama: "Roti Baghdad Kari Ayam",
@@ -213,7 +212,9 @@ const CONFIG = {
   pilihDaging: true,
   addOnTersedia: []
 },
-    },
+    
+
+  
     {
       id: "gorengan-pisang-molen",
       kategori: "gorengan",
