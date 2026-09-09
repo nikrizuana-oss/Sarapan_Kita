@@ -37,7 +37,7 @@ const CONFIG = {
 
   /* ============ 3. ALAMAT OUTLET + GOOGLE MAPS ============ */
   outlet: {
-    name: "Sarapan Kita - Outlet Pusat",
+    name: "King John - Outlet Pusat",
     address: "Jl. antara raya, harapan jaya, bekasi utara",
     // Cara ambil link embed Google Maps ada di README.md bagian "Ganti Lokasi Google Maps"
     mapsEmbedUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d589.6043738644828!2d106.98233657974562!3d-6.214887158557361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d001be74ca5%3A0xcba453d766dabdee!2sKing%20John%20(Roti%20John)!5e0!3m2!1sid!2sid!4v1788888504368!5m2!1sid!2sid",
