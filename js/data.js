@@ -201,16 +201,18 @@ const CONFIG = {
       addOnTersedia: ["keju", "xtratelur", "sausking", "mayo"]
     },
     {
-      id: "roti-baghdad",
-      kategori: "roti-baghdad",
-      nama: "Roti Baghdad Kari Ayaam",
-      deskripsi: "Roti isian daging ayam kari dengan bumbu kari impor malaysia dibungkus kulit lumpia lalu digoreng.",
-      image: "",
-      emoji: "🫓",
-      punyaUkuran: false,
-      hargaUkuran: 12000,
-      pilihDaging: true,
-      addOnTersedia: []
+      {
+  id: "roti-baghdad",
+  kategori: "roti-baghdad",
+  nama: "Roti Baghdad Kari Ayam",
+  deskripsi: "Roti isian daging ayam kari dengan bumbu kari impor malaysia dibungkus kulit lumpia lalu digoreng.",
+  image: "",
+  emoji: "🫓",
+  punyaUkuran: false,
+  hargaDasar: 12000,
+  pilihDaging: true,
+  addOnTersedia: []
+},
     },
     {
       id: "gorengan-pisang-molen",
