@@ -207,7 +207,7 @@ const CONFIG = {
       deskripsi: "Roti isian daging ayam kari dengan bumbu kari impor malaysia dibungkus kulit lumpia lalu digoreng.",
       image: "",
       emoji: "🫓",
-      punyaUkuran: true,
+      punyaUkuran: false,
       hargaUkuran: { "12000" },
       pilihDaging: true,
       addOnTersedia: []
