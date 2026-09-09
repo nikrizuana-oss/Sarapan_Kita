@@ -48,7 +48,7 @@ const CONFIG = {
   /* ============ 4. HALAL ============ */
   halal: {
     aktif: true,
-    nomorSertifikat: "ID00000000000000", // ganti dengan nomor sertifikat halal asli
+    nomorSertifikat: "ID32110067560380526", // ganti dengan nomor sertifikat halal asli
     // Ganti dengan file logo halal resmi MUI/BPJPH kamu di /assets, contoh: "assets/logo-halal.png"
     logoImage: "assets/halal.png"
   },
@@ -83,7 +83,7 @@ const CONFIG = {
       kodeVoucher: "PAGI10"
     },
     {
-      title: "Beli 2 Gorengan Gratis 1",
+      title: "Beli 5 Gorengan Gratis 1",
       desc: "Khusus pembelian pisang molen, ubi goreng, dan pastel.",
       image: "",
       kodeVoucher: "GORENG21"
@@ -201,14 +201,14 @@ const CONFIG = {
       addOnTersedia: ["keju", "xtratelur", "sausking", "mayo"]
     },
     {
-      id: "rb-original",
+      id: "roti-baghdad",
       kategori: "roti-baghdad",
       nama: "Roti Baghdad Kari Ayaam",
       deskripsi: "Roti isian daging ayam kari dengan bumbu kari impor malaysia dibungkus kulit lumpia lalu digoreng.",
       image: "",
       emoji: "🫓",
       punyaUkuran: true,
-      hargaUkuran: { M: 12000, L: 12000, XL: 12000 },
+      hargaUkuran: { "satu ukuran" },
       pilihDaging: true,
       addOnTersedia: ["keju", "xtratelur", "sausking", "mayo"]
     },
@@ -225,10 +225,10 @@ const CONFIG = {
       addOnTersedia: []
     },
     {
-      id: "gorengan-ubi-goreng",
+      id: "gorengan-molen ubi-goreng",
       kategori: "gorengan",
-      nama: "Ubi Goreng Crispy",
-      deskripsi: "Ubi jalar pilihan, digoreng crispy dengan taburan sedikit garam. Isi 5 pcs.",
+      nama: "molen Ubi Goreng",
+      deskripsi: "molen Ubi jalar pilihan, digoreng golden brown ubi dalam lembut. Isi 5 pcs.",
       image: "",
       emoji: "🍠",
       hargaDasar: 10000,
