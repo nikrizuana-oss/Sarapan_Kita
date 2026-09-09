@@ -217,9 +217,9 @@ const CONFIG = {
       kategori: "gorengan",
       nama: "Pisang Molen",
       deskripsi: "Pisang manis dibalut kulit lumpia renyah, digoreng hingga golden crispy. Isi 5 pcs.",
-      image: "molen.png",
-      emoji: "🍌",
-      hargaDasar: 12000,
+      image: "molenpisang.png",
+      emoji: "",
+      hargaDasar: 15000,
       punyaUkuran: false,
       pilihDaging: false,
       addOnTersedia: []
