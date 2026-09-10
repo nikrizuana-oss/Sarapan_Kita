@@ -56,13 +56,13 @@ const CONFIG = {
   /* ============ 5. ONGKIR GRATIS (BERSYARAT) ============ */
   freeOngkir: {
     aktif: true,
-    minBelanja: 30000, // gratis ongkir jika total belanja >= angka ini
+    minBelanja: 15000, // gratis ongkir jika total belanja >= angka ini
     area: [
       "harapan jaya bekasi utara"
     ],
-    catatan: "Gratis ongkir berlaku untuk area di atas dengan minimal belanja Rp 30.000. Di luar area, ongkir menyesuaikan jarak (dikonfirmasi via WhatsApp).",
+    catatan: "Gratis ongkir berlaku untuk area di atas dengan jarak 1km dan minimal belanja Rp 15.000. Di luar area, ongkir menyesuaikan jarak (dikonfirmasi via WhatsApp).",
     // Perkiraan ongkir kalau area TIDAK termasuk di daftar "area" di atas (hanya estimasi awal)
-    estimasiOngkirLuarArea: 9000
+    estimasiOngkirLuarArea: 5000
   },
 
   /* ============ 6. PEMBAYARAN ============ */
@@ -153,7 +153,7 @@ const CONFIG = {
       emoji: "🥖",
       punyaUkuran: true,
       // Harga per ukuran, isi sendiri-sendiri seperti tabel Excel kamu
-      hargaUkuran: { M: 13000, L: 16000, XL: 22000 },
+      hargaUkuran: { M: 15000, L: 18000, XL: 24000 },
       pilihDaging: false,
       // isianTersedia = daftar isian yang BENERAN ada di menu ini, supaya
       // opsi "tidak pakai ..." yang muncul cuma yang relevan (tidak perlu
@@ -169,7 +169,7 @@ const CONFIG = {
       image: "",
       emoji: "🥖",
       punyaUkuran: true,
-      hargaUkuran: { M: 19000, L: 24000, XL: 29000 },
+      hargaUkuran: { M: 20000, L: 25000, XL: 30000 },
       pilihDaging: false,
       isianTersedia: ["telur", "sayur", "ayam"],
       addOnTersedia: ["keju", "xtratelur", "sausking", "mayo"]
@@ -182,7 +182,7 @@ const CONFIG = {
       image: "",
       emoji: "🥖",
       punyaUkuran: true,
-      hargaUkuran: { M: 20000, L: 25000, XL: 30000 },
+      hargaUkuran: { M: 21000, L: 26000, XL: 31000 },
       pilihDaging: false,
       isianTersedia: ["telur", "sayur", "ayam"],
       addOnTersedia: ["keju", "xtratelur", "sausking", "mayo"]
@@ -195,7 +195,7 @@ const CONFIG = {
       image: "",
       emoji: "🥖",
       punyaUkuran: true,
-      hargaUkuran: { M: 24000, L: 28000, XL: 37000 },
+      hargaUkuran: { M: 25000, L: 29000, XL: 38000 },
       pilihDaging: false,
       isianTersedia: ["telur", "sayur", "sapi"],
       addOnTersedia: ["keju", "xtratelur", "sausking", "mayo"]
@@ -208,7 +208,7 @@ const CONFIG = {
       image: "",
       emoji: "🫓",
       punyaUkuran: false,
-      hargaDasar: 12000,
+      hargaDasar: 14000,
       pilihDaging: true,
       addOnTersedia: []
     },
@@ -216,7 +216,7 @@ const CONFIG = {
       id: "gorengan-pisang-molen",
       kategori: "gorengan",
       nama: "Pisang Molen",
-      deskripsi: "Pisang manis dibalut kulit lumpia renyah, digoreng hingga golden crispy. Isi 5 pcs.",
+      deskripsi: "Pisang manis dibalut kulit lumpia renyah, digoreng hingga golden crispy. Isi 5 pcs gratis 1 bebas pilih gorengan.",
       image: "assets/molenpisang.png",
       emoji: "",
       hargaDasar: 15000,
@@ -228,10 +228,10 @@ const CONFIG = {
       id: "gorengan-molen ubi-goreng",
       kategori: "gorengan",
       nama: "molen Ubi Goreng",
-      deskripsi: "molen Ubi jalar pilihan, digoreng golden brown ubi dalam lembut. Isi 5 pcs.",
+      deskripsi: "molen Ubi jalar pilihan, digoreng golden brown ubi dalam lembut. Isi 5 pcs.gratis 1 bebas pilih gorengan",
       image: "",
       emoji: "🍠",
-      hargaDasar: 10000,
+      hargaDasar: 15000,
       punyaUkuran: false,
       pilihDaging: false,
       addOnTersedia: []
@@ -240,10 +240,10 @@ const CONFIG = {
       id: "gorengan-pastel",
       kategori: "gorengan",
       nama: "Pastel Isi Sayur & Telur",
-      deskripsi: "Kulit pastel renyah dengan isian sayur, bihun, dan telur. Isi 5 pcs.",
+      deskripsi: "Kulit pastel renyah dengan isian sayur, bihun, dan telur. Isi 5 pcs.bebas pilih gorengan",
       image: "assets/pastel.png",
       emoji: "🥟",
-      hargaDasar: 11000,
+      hargaDasar: 15000,
       punyaUkuran: false,
       pilihDaging: false,
       addOnTersedia: []
