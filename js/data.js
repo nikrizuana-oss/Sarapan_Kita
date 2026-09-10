@@ -21,7 +21,7 @@ const CONFIG = {
     tagline: "Sarapan simple, tidak ribet.",
     // Logo: kosongkan "" untuk pakai logo teks bawaan (bisa diedit lewat CSS),
     // atau isi path gambar, contoh: "assets/logo.png"
-    logoImage: "assets/logokingjohn.png",
+    logoImage: "assets/logosk.png",
     // Warna aksen kalau logoImage kosong (logo teks otomatis)
     logoInitial: "SK"
   },
